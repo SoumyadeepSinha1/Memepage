@@ -1,0 +1,22 @@
+<% include partials/header.ejs %>
+                <div class="container d-flex justify-content center">
+                        <div class="jumbotron" style="width:70%;margin: 0 auto;">
+                            <form action="/new" method="POST">
+                                <input type="text" placeholder="Name" name="name">
+                                <input type="url" placeholder="URL" name="image">
+                                <input list="categories" name="category" placeholder="Category">
+                                <datalist id="categories">
+                                    <option value="Movies">Movies</option>
+                                    <option value="TV Series">TV Series</option>
+                                    <option value="General Template">General Template</option>
+                                    <option value="Chat Screenshots">Chat Screenshots</option>
+                                    <option value="One-Liners">One-Liners</option>
+                                    <option value="Historical">Historical</option>
+                                    <option value="Dark Humour">Dark Humour</option>
+                                    <option value="NSFW">NSFW</option>
+                                </datalist>
+                                <button>Submit</button>
+                            </form>
+                        </div>
+                    </div>                    
+<% include partials/footer.ejs %>
