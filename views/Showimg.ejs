@@ -1,0 +1,21 @@
+<style>
+    
+.img-responsive{
+    display: block;
+}
+</style>
+<div class="container" style="padding: 0.1%;">
+<div class="card-columns" style="column-gap: 0rem;">
+<% memes.forEach(function(meme){ %>
+<div class="card" >
+    <div class="card-img-top" id="imagescard">
+    <a href="/<%= meme._id %>/view"><img class="card-img-top" src="<%= meme.image %>" style="border-radius: 10px 10px 10px 10px; "></a>
+    </div>
+    <div class="card-body justify-content-end" style="padding-top: 0px;padding-bottom: 0px;">
+        
+        
+    </div>
+</div>
+<% }); %>
+</div>
+</div>

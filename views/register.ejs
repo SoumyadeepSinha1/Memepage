@@ -1,0 +1,7 @@
+<% include partials/header.ejs %>
+<form action="/register" method="POST">
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    <button>Submit</button>
+</form>
+<% include partials/footer.ejs %>
